@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+    deixar com
+    largura de 920px 
+     altura de 800px 
+     centralizada
+*/
+
+.mamae {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: 2px dashed salmon;
+    gap: 20px;
+    width: 920px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+/*
+
+    deixar em coluna e centralizado nos dois eixos
+*/
+.mamae_filhinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    background-color: salmon;
+    border: 2px dashed black;
+}
+
+.filhinho--azul{
+    background-color: blue;
+    color: white;
+}
