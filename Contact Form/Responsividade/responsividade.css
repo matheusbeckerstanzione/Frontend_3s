@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*responsividade de desktop*/
+
+
+h1{
+    color: blue;
+}
+
+img{
+    width: 100px;
+}
+
+
+/*responsividade de tablet*/
+@media screen and (max-width: 991px){
+    h1{
+        color: rgb(112, 4, 4);
+    }
+
+    img{
+        display: none;
+    }
+}
+
+
+/*responsividade de mobile*/
+@media screen and (max-width: 767px){
+    h1{
+        background-color: saddlebrown;
+    }
+
+    img{
+        
+        display: inline-block;
+    }
+}
+
+/*breakpoint*/

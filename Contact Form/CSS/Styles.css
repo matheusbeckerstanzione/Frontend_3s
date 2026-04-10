@@ -1,0 +1,139 @@
+
+@font-face {
+    font-family: inconsolada;
+    src: url(../Fontes/Inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #66E0D6, #47ACEB);
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container--flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.header {
+    padding: 10px 0;
+}
+
+.header__logo {
+    width: 100px;
+}
+
+.header__title {
+    font-family: inconsolada;
+    color: #DED27C;
+}
+
+.header__text {
+    font-family: inconsolada;
+    color: #ffffff;
+}
+
+
+.contact-form {
+    padding: 20px;
+}
+
+
+.contact-form__linha {
+    display: flex;
+    margin-bottom: 20px; 
+}
+
+.container-form__col-a {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.container-form__col-b {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact-form__label {
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+
+.contact-form__input {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+}
+
+.contact-form__input:focus {
+    background-color: #72c3bd;
+    color: #2784BE;
+    border: 1px solid #ffffff;
+}
+
+/* Modificadores de tamanho dos Inputs */
+.contact-form__input--metade {
+    width: 49%; 
+    height: 35px;
+}
+
+.contact-form__input--inteira {
+    width: 100%; 
+    height: 35px;
+}
+
+.contact-form__input--terco {
+    width: 32%; 
+    height: 35px;
+    
+}
+
+.contact-form__input--cep {
+    width: 22%; 
+    height: 35px;
+}
+
+.contact-form__input--rua {
+    width: 56%; 
+    height: 35px;
+}
+
+.contact-form__input--num {
+    width: 15%; 
+    height: 35px;
+}
+
+
+/* breakpoint smartphones */
+@media screen and (max-width: 767px) {
+    
+}
+
+/* breakpoint tablets */
+@media screen and (max-width: 991px) {
+    
+}

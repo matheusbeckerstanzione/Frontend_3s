@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/Styles.css">
+</head>
+
+<body>
+
+    <header> 
+        <div class="container container--flex-column">   
+            <img class="header__logo" src="../Imagens/mdi_drivers-license-outline.svg" >
+            <h1 class="header__title">Contact Form</h1>
+            <p class="header__text">Insira os dados do contato e clique em cadastrar!</p>
+        </div>
+    </header>
+
+    <!-- comeco do main -->
+    <main>  
+        <div class="container">
+            <!-- comeco do formulário -->
+            <form action="" class="contact-form">
+                
+                <!-- linha do formulário nome-->
+                <div class="contact-form__linha">
+                    
+                    <!-- comeco do campo de nome -->
+                    <div class="container-form__col-a">
+                        <label class="contact-form__label" for="name">Nome:</label>
+                    </div>
+                    <!-- fim do campo de nome -->
+
+                    <!-- comeco da coluna b do campo de nome -->
+                    <div class="container-form__col-b">
+                        <input class="contact-form__input contact-form__input--metade" name="name" id="name" placeholder="Nome" type="text">
+                        <input class="contact-form__input contact-form__input--metade" name="sobrenome" id="sobrenome" placeholder="Sobrenome" type="text">
+                    </div>
+                     <!-- fim da coluna b do campo de nome -->
+
+                </div>
+                    <!-- fim da linha do formulário -->
+    
+                    <!-- linha do formulário email -->
+                <div class="contact-form__linha">
+
+                    <!-- comeco do campo de email -->
+                    <div class="container-form__col-a">
+                        <label class="contact-form__label" for="email">Email:</label>
+                    </div>
+                    <!-- fim do campo de email -->
+
+                    <!-- comeco da coluna b do campo de email -->
+                    <div class="container-form__col-b">
+                        <input class="contact-form__input contact-form__input--inteira" name="email" id="email" placeholder="Email" type="email">
+                    </div>
+
+                    </div>
+
+                    <!-- fim da coluna b do campo de telefone -->
+                    <div class="contact-form__linha">
+
+                    <div class="container-form__col-a">
+                        <label class="contact-form__label" for="telefone">Telefone:</label>
+                    </div>
+                    <div class="container-form__col-b">
+                        <input class="contact-form__input contact-form__input--terco" name="telefone" id="telefone" placeholder="+55" type="tel">
+                        <input class="contact-form__input contact-form__input--terco" name="ddd" id="ddd" placeholder="DDD" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="numero" id="numero" placeholder="ex:999999999" type="text">
+                    </div>
+                    
+                </div>
+
+                <!-- linha do formulário endereço -->
+                <div class="contact-form__linha">
+                    
+                    <div class="container-form__col-a">
+                        <label class="contact-form__label" for="cep">Endereço:</label>
+                    </div>
+
+                    <div class="container-form__col-b">
+                        <input class="contact-form__input contact-form__input--cep" name="cep" id="cep" placeholder="CEP" type="text">
+                        <input class="contact-form__input contact-form__input--rua" name="rua" id="rua" placeholder="Rua" type="text">
+                        <input class="contact-form__input contact-form__input--num" name="numero_end" id="numero_end" placeholder="N" type="text">
+                    </div>
+                </div>
+
+                <div class="contact-form__linha">
+                    
+                    <div class="container-form__col-a"></div>
+
+                    <div class="container-form__col-b">
+                        <input class="contact-form__input contact-form__input--terco" name="complemento" id="complemento" placeholder="Complemento" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="bairro" id="bairro" placeholder="Bairro" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="cidade" id="cidade" placeholder="Cidade" type="text">
+                    </div>
+                </div>
+
+                <div class="contact-form__linha">
+                    
+                    <div class="container-form__col-a"></div>
+
+                    <div class="container-form__col-b">
+                        <input class="contact-form__input contact-form__input--terco" name="estado" id="estado" placeholder="Estado" type="text">
+                    </div>
+                </div>
+                <!-- Fim do formulário de endereço -->
+
+                    </div>
+                    <!-- fim da coluna b do campo de telefone -->
+
+
+
+                </form>
+                <!-- fim do formulário -->
+
+        </div>
+
+    </main>
+    <!-- fim do main -->
+
+    </body>
+</html>
