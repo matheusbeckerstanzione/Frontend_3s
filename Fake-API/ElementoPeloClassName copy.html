@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .corsim {
+            color: rgb(21, 255, 0);
+        }
+
+        .cornao {
+            color: rgb(255, 0, 0);
+        }
+       select option.corsim{
+            color: rgb(21, 255, 0);
+        }
+        select option.cornao{
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="fruta" placeholder="digite o nome da fruta">
+
+    <select name="" id="nomeClasse">
+
+    <option value="">Selecionar</option>
+    <option value="corsim">CorSim</option>
+    <option value="cornao">CorNao</option>
+
+    </select>
+    
+
+    <button onclick="cadastrarFruta()">Cadastrar</button>
+
+    <h1>Frutas</h1>
+
+    <ul id="listaFrutas">
+        <li class="corsim">Amora</li>
+    </ul>
+
+    <script>
+        function cadastrarFruta() {
+
+            /// retorna o valor do elemento
+            const fruta = document.getElementById("fruta").value;
+            const nomeClasse = document.getElementById("nomeClasse").value;
+            const listaFrutas = document.getElementById("listaFrutas");
+            //cadastrar um item de fruta no final da lista
+            //mantendo os itens anteriores
+          
+
+            if(fruta.trim().length == 0 || nomeClasse.trim().length == 0){
+                alert("Precisa digitar todos os campos");
+                return false;
+            }
+
+              listaFrutas.innerHTML += `<li class="${nomeClasse}">${fruta}</li>`;
+        }
+    </script>
+</body>
+
+</html>

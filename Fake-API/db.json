@@ -1,0 +1,30 @@
+{
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "matheus",
+      "idade": 17
+    },
+    {
+      "nome": "matheus",
+      "idade": "18",
+      "id": "EErudbBf0Mo"
+    },
+    {
+      "nome": "matheus",
+      "idade": "18",
+      "id": "UeepYVbfi48"
+    },
+    {
+      "nome": "matheus",
+      "idade": "17",
+      "id": "Tl2FxxfKeFw"
+    },
+    {
+      "id": "NEKBy4RhlYk",
+      "nome": "matheus",
+      "idade": "17"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

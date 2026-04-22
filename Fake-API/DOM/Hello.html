@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <body>
+
+    <h1 id="titulo">Olá, Mundo!</h1>
+    <p>Hello Dom Js</p>
+    <button onclick="saudacao();">Click aqui</button>
+    <button ondblclick="mouseclicado();">Click aqui</button>
+    <button onmousedown="mou();">Click aqui</button>
+    <button  onmouseover="saudacaoLegal();">Click aqui</button>
+</body>
+
+    <script>
+
+                    alert(`Titulo: ${document.getElementById("titulo").textContent}`);
+
+        function saudacao() {
+            alert("Olá, Mundo!");
+            }
+
+            function saudacaoLegal() {
+                alert("Olá, amigo!");
+            }
+
+             function mouseclicado() {
+                alert("Olá, pessoal!");
+            }
+
+               function mouo() {
+                alert("Olá, pessoal!");
+            }
+</script>
+</head>
+
+</html>
