@@ -10,40 +10,43 @@
 
 <body>
 
-    <header> 
-        <div class="container container--flex-column">   
+    <header>
+        <div class="container container--flex-column">
             <img class="header__logo" src="../Imagens/mdi_drivers-license-outline.svg" alt="Logo">
             <h1 class="header__title">Contact Form</h1>
             <p class="header__text">Insira os dados do contato e clique em cadastrar!</p>
         </div>
     </header>
 
-    <main>  
+    <main>
         <div class="container">
             <form action="" class="contact-form">
 
                 <!--  -->
                 <div class="contact-form__linha">
-                    
+
                     <div class="container-form__col-a">
                         <label class="contact-form__label" for="name">Nome:</label>
                     </div>
 
                     <!--  -->
                     <div class="container-form__col-b">
-                        <input class="contact-form__input contact-form__input--metade" name="name" id="name" placeholder="Nome" type="text">
-                        <input class="contact-form__input contact-form__input--metade" name="sobrenome" id="sobrenome" placeholder="Sobrenome" type="text">
+                        <input class="contact-form__input contact-form__input--metade" name="name" id="name"
+                            placeholder="Nome" type="text">
+                        <input class="contact-form__input contact-form__input--metade" name="sobrenome" id="sobrenome"
+                            placeholder="Sobrenome" type="text">
                     </div>
-                    </div>
+                </div>
 
-                    <!--  -->
+                <!--  -->
                 <div class="contact-form__linha">
 
                     <div class="container-form__col-a">
                         <label class="contact-form__label" for="email">Email:</label>
                     </div>
                     <div class="container-form__col-b">
-                        <input class="contact-form__input contact-form__input--inteira" name="email" id="email" placeholder="Email" type="email">
+                        <input class="contact-form__input contact-form__input--inteira" name="email" id="email"
+                            placeholder="Email" type="email">
                     </div>
 
                 </div>
@@ -57,78 +60,94 @@
 
                     <!--  -->
                     <div class="container-form__col-b">
-                        <input class="contact-form__input contact-form__input--terco" name="telefone" id="telefone" placeholder="+55" type="tel">
-                        <input class="contact-form__input contact-form__input--terco" name="ddd" id="ddd" placeholder="DDD" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="numero" id="numero" placeholder="ex:999999999" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="telefone" id="telefone"
+                            placeholder="+55" type="tel">
+                        <input class="contact-form__input contact-form__input--terco" name="ddd" id="ddd"
+                            placeholder="DDD" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="numero" id="numero"
+                            placeholder="ex:999999999" type="text">
                     </div>
-                    
+
                 </div>
 
                 <!--  -->
                 <div class="contact-form__linha">
-                    
+
                     <div class="container-form__col-a">
                         <label class="contact-form__label" for="cep">Endereço:</label>
                     </div>
 
                     <!--  -->
                     <div class="container-form__col-b">
-                        <input class="contact-form__input contact-form__input--cep" name="cep" id="cep" placeholder="CEP" type="text">
-                        <input class="contact-form__input contact-form__input--rua" name="rua" id="rua" placeholder="Rua" type="text">
-                        <input class="contact-form__input contact-form__input--num" name="numero_end" id="numero_end" placeholder="N" type="text">
+                        <input class="contact-form__input contact-form__input--cep" name="cep" id="cep"
+                            onblur="EnderecoBuscado(this.value);" placeholder="CEP" type="text">
+                        <input class="contact-form__input contact-form__input--rua" name="rua" id="rua"
+                            placeholder="Rua" type="text">
+                        <input class="contact-form__input contact-form__input--num" name="numero_end" id="numero_end"
+                            placeholder="N" type="text">
                     </div>
                 </div>
 
                 <!--  -->
                 <div class="contact-form__linha">
-                    
+
                     <div class="container-form__col-a"></div>
 
                     <div class="container-form__col-b">
-                        <input class="contact-form__input contact-form__input--terco" name="complemento" id="complemento" placeholder="Complemento" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="bairro" id="bairro" placeholder="Bairro" type="text">
-                        <input class="contact-form__input contact-form__input--terco" name="cidade" id="cidade" placeholder="Cidade" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="complemento"
+                            id="complemento" placeholder="Complemento" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="bairro" id="bairro"
+                            placeholder="Bairro" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="cidade" id="cidade"
+                            placeholder="Cidade" type="text">
                     </div>
                 </div>
 
                 <!--  -->
                 <div class="contact-form__linha">
-                    
+
                     <div class="container-form__col-a"></div>
 
                     <div class="container-form__col-b">
-                        <input class="contact-form__input contact-form__input--terco" name="estado" id="estado" placeholder="Estado" type="text">
+                        <input class="contact-form__input contact-form__input--terco" name="estado" id="estado"
+                            placeholder="Estado" type="text">
                     </div>
                 </div>
 
                 <!--  -->
                 <div class="contact-form__linha">
-                    
+
                     <div class="container-form__col-a container-form__col-a--top">
                         <label class="contact-form__label" for="anotacoes">Anotações:</label>
                     </div>
-                    
+
                     <div class="container-form__col-b">
-                        <textarea class="contact-form__input contact-form__input--textarea" name="anotacoes" id="anotacoes" placeholder="Suas anotacoes aqui"></textarea>
+                        <textarea class="contact-form__input contact-form__input--textarea" name="anotacoes"
+                            id="anotacoes" placeholder="Suas anotacoes aqui"></textarea>
                     </div>
                 </div>
 
                 <!--  -->
                 <div class="contact-form__linha">
-                    
+
                     <div class="container-form__col-a"></div>
 
                     <div class="container-form__col-b button-container">
-                        <button type="submit" class="contact-form__button--medate">Cadastrar</button>
+                        <button type="button" class="contact-form__button--medate"
+                            onclick="validarFormulario();">Cadastrar</button>
                         <button type="reset" class="contact-form__button--medate">Limpar</button>
                     </div>
 
-                </div>  
-                
+                </div>
 
-                </form>
-            </div>
+
+            </form>
+        </div>
 
     </main>
-    </body>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
 </html>

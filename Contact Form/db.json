@@ -1,0 +1,120 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "contacts": [
+    {
+      "id": "1",
+      "nome": "Felipe",
+      "sobrenome": "Torolho",
+      "email": "felipetorolho@gmail.com"
+    },
+    {
+      "nome": "Matheus",
+      "sobrenome": "Becker",
+      "email": "matheus@gmail.com",
+      "id": "j1ahNWc5V94"
+    },
+    {
+      "nome": "Matheus",
+      "sobrenome": "Becker",
+      "email": "matheus@gmail.com",
+      "id": "q-mXBzEpJJk"
+    },
+    {
+      "nome": "marcos ",
+      "sobrenome": "Becker",
+      "email": "matheus@gmail.com",
+      "id": "ObFwwnozdpo"
+    },
+    {
+      "nome": "marco ",
+      "sobrenome": "Beckedsr",
+      "email": "matheus@gmail.com",
+      "id": "-9cXk6qWylI"
+    },
+    {
+      "nome": "mardsfco ",
+      "sobrenome": "Beckedsr",
+      "email": "matheus@gmail.com",
+      "id": "Thf710aG5DA"
+    },
+    {
+      "nome": "mardsfco ",
+      "sobrenome": "Bdsfafeckedsr",
+      "email": "matheus@gmail.com",
+      "id": "EyN_dTrm84U"
+    },
+    {
+      "nome": "celular ",
+      "preco": "10000",
+      "quantidade": "1",
+      "id": "pPpaiv9Acq0"
+    },
+    {
+      "nome": "pc ",
+      "preco": "5000",
+      "quantidade": "1",
+      "id": "4M7v8a1YMrk"
+    },
+    {
+      "nome": "chinelo ",
+      "preco": "50",
+      "quantidade": "1",
+      "id": "i5qAFD5PxZw"
+    },
+    {
+      "nome": "sapato ",
+      "preco": "1250",
+      "quantidade": "1",
+      "id": "9r6eASCiTwY"
+    },
+    {
+      "nome": "oculos ",
+      "preco": "1000",
+      "quantidade": "1",
+      "id": "Rycgl6yjU5g"
+    },
+    {
+      "nome": "camiseta ",
+      "preco": "100",
+      "quantidade": "1",
+      "id": "iTrU7I9a6Uo"
+    }
+  ],
+
+
+  "produto": [
+    {
+        "id": "1",
+        "nome": "celular ",
+        "preco": "10000",
+        "quantidade": "1"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
