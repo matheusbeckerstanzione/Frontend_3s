@@ -26,5 +26,309 @@
       "idade": "17"
     }
   ],
+  "imc": [
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "mtfG0_yGonY"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "tb-azeTZDVs"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "Wqk0qI3i33w"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "cQ2rglAs1Mg"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "dEjMk-1gfEc"
+    },
+    {
+      "nome": "matheus",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "_YD6wDjw3M8"
+    },
+    {
+      "nome": "matheus",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "ZpdzoB9z03E"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "cUuTPoFNN3c"
+    },
+    {
+      "nome": "matheus",
+      "altura": 1.67,
+      "peso": 55,
+      "imc": 19.721036967980208,
+      "resultado": "saudável",
+      "id": "Oa27XnWRHRU"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "O8eQtph04U0"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "ERSmK8xQtIo"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "k5dZzaQ5d4k"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "oBxZKS465x4"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "rUnSA_-hg7M"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "MWYDQe45u0w"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "QlrhxyRMkmw"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "osq2pKk7GMw"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "tR0tdXvYWMQ"
+    },
+    {
+      "nome": "matheus",
+      "altura": 156,
+      "peso": 78,
+      "imc": 0.003205128205128205,
+      "resultado": "magreza grave",
+      "id": "-9spM1ciYss"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "lYkRSYkYzMo"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "vViJDklvKJ0"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "xFzPcgzuQgM"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "x51RMYyvKDQ"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "YfUU404axVA"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "KEvI64tI1zg"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "7-ufQTRdWAk"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "x3syy_chMK4"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "cvO6RDnwkMs"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "xyLr7VfolXw"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "SDIH_BHRL4g"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "UtF-pHAlKEk"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "iaJEBrknvBw"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "urs3B8cBe_c"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "eqz1xC-pShQ"
+    }
+  ],
+  "simple": [
+    {
+      "n1": 13,
+      "n2": 123,
+      "operacao": "soma",
+      "resultado": "136.00",
+      "id": "ofiQxqsqm8U"
+    },
+    {
+      "n1": 13,
+      "n2": 123,
+      "operacao": "soma",
+      "resultado": "136.00",
+      "id": "yAHTj6n0OpE"
+    },
+    {
+      "n1": 123,
+      "n2": 213,
+      "operacao": "soma",
+      "resultado": "336.00",
+      "id": "0ToWooUNJvg"
+    },
+    {
+      "n1": 132,
+      "n2": 123,
+      "operacao": "soma",
+      "resultado": "255.00",
+      "id": "-cUkWnqz0vY"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

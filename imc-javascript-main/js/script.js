@@ -3,7 +3,8 @@ const nome = document.getElementById("nome").value;
 const altura = parseFloat(document.getElementById("altura").value);
 const peso = parseFloat(document.getElementById("peso").value);
 
-console.log(nome, altura, peso);
+
+
 
 if(nome.trim().length == 0 || isNaN(altura) || isNaN(peso)){
     alert("Preencha todos os campos!");
@@ -18,7 +19,70 @@ console.log(altura);
 console.log(peso);
 console.log(imc);
 console.log(textoResultado);
+
+ 
+
+    const objImc = {
+        nome: nome,
+        altura: altura,
+        peso: peso,
+        imc: imc,
+        resultado: textoResultado
+    }
+
+     const retorno = cadastrarContato(objImc);
+
+     
+     if (retorno) {
+        
+         const linhaTabela = `<tr>
+        <td>${nome}</td>
+        <td>${altura}</td>
+        <td>${peso}</td>
+        <td>${imc.toFixed(2)}</td>
+        <td>${textoResultado}</td>
+    </tr>`;
+
+    // limpar os campos do formulário
+    document.getElementById("nome").value = "";
+    document.getElementById("altura").value = "";
+    document.getElementById("peso").value = "";
+    alert(
+        `${nome}, foi cadastrado no banco:
+        Nome: ${nome}
+        Imc: ${imc.toFixed(2)}
+        Resultado: ${textoResultado}`
+    );
+      document.getElementById("cadastro").innerHTML += linhaTabela;
+     } else {
+        alert("Erro ao cadastrar contato!");
+     }
+
+  
 }
+
+
+
+async function cadastrarContato(objImc) {
+    console.log(objImc);
+
+try {
+        const resposta = await fetch("http://localhost:3000/imc",{
+            method: "POST",
+          body: JSON.stringify(objImc),
+          headers: {
+            "Content-Type": "application/json; charset=UTF-8"
+          }
+        });
+
+        return true;
+    
+} catch (error) {
+    console.log(error);
+    return false;
+}
+}
+
 
 function CalcularImc(altura, peso){
 
@@ -51,5 +115,37 @@ function exibirResultadoImc(imc){
     else{
         return "obesidade grau III";
     }
+
+
+    
     
 }
+
+
+
+
+async function buscarImcs(){
+        try {
+              const retorno = await fetch("http://localhost:3000/imc");
+                const dadosRetornados = await retorno.json();
+                
+              console.log(dadosRetornados);
+              let templete = "";
+
+            for(let i = 0; i < dadosRetornados.length; i++){
+                templete += 
+                `<tr>
+                <td>${dadosRetornados[i].nome}</td>
+                <td>${dadosRetornados[i].altura}</td>
+                <td>${dadosRetornados[i].peso}</td>
+                <td>${dadosRetornados[i].imc.toFixed(2)}</td>
+                <td>${dadosRetornados[i].resultado}</td>
+            </tr>`;
+
+           tabela.innerHTML = templete;
+            }
+
+        } catch (error) {
+            
+        }
+    }
