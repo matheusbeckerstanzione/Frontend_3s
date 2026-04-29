@@ -298,6 +298,86 @@
       "imc": 30.477966223242138,
       "resultado": "obesidade grau I",
       "id": "eqz1xC-pShQ"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "O00hvlA6Vj0"
+    },
+    {
+      "nome": "amanda",
+      "altura": 167,
+      "peso": 45,
+      "imc": 0.0016135393882892896,
+      "resultado": "magreza grave",
+      "id": "x20dmFUAMH0"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "xrJRG1BYYxs"
+    },
+    {
+      "nome": "asd",
+      "altura": 134,
+      "peso": 23,
+      "imc": 0.0012809088883938516,
+      "resultado": "magreza grave",
+      "id": "sHnd925yfOk"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "dhuvoNW5sps"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "SjVnJh32BBY"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "-GUQZF1xJYE"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "GbxxXxPUMRE"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "g58hUh7ImUk"
+    },
+    {
+      "nome": "Eduardo",
+      "altura": 1.67,
+      "peso": 85,
+      "imc": 30.477966223242138,
+      "resultado": "obesidade grau I",
+      "id": "yicD5qJdiCU"
     }
   ],
   "simple": [
@@ -328,6 +408,83 @@
       "operacao": "soma",
       "resultado": "255.00",
       "id": "-cUkWnqz0vY"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "0svaPPXUVlM"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "rhTlkhi6vVw"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "wd5CmY4yXuM"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "1tufUuKBHk0"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "UekIFBOwGyY"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "iwX2ao7jA00"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "geJq0c2ihjk"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "gbZQZLADEc0"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "mNYIZagN-zw"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "43WbC-KFXMA"
+    },
+    {
+      "n1": 13,
+      "n2": 13,
+      "operacao": "soma",
+      "resultado": "26.00",
+      "id": "ae1eOUAKYVY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

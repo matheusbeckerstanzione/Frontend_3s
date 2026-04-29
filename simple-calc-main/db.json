@@ -1,0 +1,54 @@
+{
+  "simple": [
+    {
+      "n1": 10,
+      "n2": 5,
+      "operacao": "soma",
+      "resultado": 15,
+      "id": "vEpx9SBj4yQ"
+    },
+    {
+      "n1": 10,
+      "n2": 5,
+      "operacao": "subtração",
+      "resultado": 5,
+      "id": "12eFA_p14bE"
+    },
+    {
+      "n1": 10,
+      "n2": 5,
+      "operacao": "multiplicação",
+      "resultado": 50,
+      "id": "sTXJOaAqDPc"
+    },
+    {
+      "n1": 10,
+      "n2": 5,
+      "operacao": "divisão",
+      "resultado": 2,
+      "id": "rzudjticYnM"
+    },
+    {
+      "n1": 33.5,
+      "n2": 33.5,
+      "operacao": "soma",
+      "resultado": "67.00",
+      "id": "5WC7Zta6k5k"
+    },
+    {
+      "n1": 5,
+      "n2": 5,
+      "operacao": "soma",
+      "resultado": "10.00",
+      "id": "sFBLLHehfhI"
+    },
+    {
+      "n1": 4,
+      "n2": 4,
+      "operacao": "soma",
+      "resultado": "8.00",
+      "id": "5-gzrly1nMA"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
