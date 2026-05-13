@@ -1,0 +1,13 @@
+h1{
+    width: 350px;
+    height: 100px;
+    border-radius: 15px;
+    background: red;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    font-size: medium;
+
+}
