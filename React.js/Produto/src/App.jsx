@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css"
 import Produto from "./Componentes/Produtos/Produto";
 
@@ -5,7 +6,12 @@ function App() {
 
   return (
     <>
-    <Produto />
+    <BrowserRouter>
+      <Routes>
+      <Route element={<Produto />} path="/"  />
+      </Routes>
+    </BrowserRouter>
+  
     </>
   );
 }

@@ -1,0 +1,77 @@
+{
+  "produtos": [
+    {
+      "nome": "Notebook",
+      "preco": 5000,
+      "descricao": "Notebook Gamer.",
+      "quantidade": 101,
+      "imagem": "image.jpg",
+      "id": "gHmgWMWjIyU"
+    },
+    {
+      "nome": "pc gamer",
+      "preco": 67,
+      "descricao": "geracao 67",
+      "quantidade": 67,
+      "imagem": "image.jpg",
+      "id": "JQbj_OxCnlA"
+    },
+    {
+      "nome": "sdad",
+      "preco": 1,
+      "descricao": "asda",
+      "quantidade": 1,
+      "imagem": "image.jpg",
+      "id": "_0O75-Pd6WY"
+    },
+    {
+      "nome": "wqeqweq",
+      "preco": 1,
+      "descricao": "dadas",
+      "quantidade": 2,
+      "imagem": "image.jpg",
+      "id": "gGA40bU-URY"
+    },
+    {
+      "nome": "qweqwe",
+      "preco": 1,
+      "descricao": "sdad",
+      "quantidade": 23,
+      "imagem": "image.jpg",
+      "id": "kP7GFdNUfbw"
+    },
+    {
+      "nome": "testtt",
+      "preco": 1,
+      "descricao": "dsfsfasfdsf",
+      "quantidade": 2,
+      "imagem": "image.jpg",
+      "id": "c-yByVseY8s"
+    },
+    {
+      "nome": "qweqwrqrererq",
+      "preco": 123,
+      "descricao": "sdfsdfsfds",
+      "quantidade": 123,
+      "imagem": "image.jpg",
+      "id": "RzKEOAOaffA"
+    },
+    {
+      "nome": "matehussad",
+      "preco": 1231,
+      "descricao": "dslfhaskhdfiakjf",
+      "quantidade": 123324124,
+      "imagem": "image.jpg",
+      "id": "kTX9zI191FA"
+    },
+    {
+      "nome": "Eduardo2wqeqwe",
+      "preco": 213213,
+      "descricao": "qwe",
+      "quantidade": 23123123,
+      "imagem": "image.jpg",
+      "id": "UwHxEPjnh6M"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
