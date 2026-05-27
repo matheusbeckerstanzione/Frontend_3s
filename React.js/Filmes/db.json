@@ -1,0 +1,29 @@
+{
+  "Genero": [
+    {
+      "idGenero": "a5ce7e85-113a-46b9-9ef8-ba5bd5de88d2",
+      "nome": "terror",
+      "filmes": [],
+      "id": "LcsBsF3WeQg"
+    },
+    {
+      "idGenero": "ff501fd9-15aa-41c3-9213-50c514eb2fba",
+      "nome": "Eduardo2",
+      "filmes": [],
+      "id": "TjIJWB1f5VU"
+    },
+    {
+      "idGenero": "1aff2bbf-470b-4fae-8bfa-470d699d2623",
+      "nome": "Eduardo2",
+      "filmes": [],
+      "id": "131P4oMm2Ro"
+    },
+    {
+      "idGeneroGenero": "dcd116a0-c274-4c7f-a351-4cb3bbd6d730",
+      "nome": "teste",
+      "filmes": [],
+      "id": "U7_BvcQ70tg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

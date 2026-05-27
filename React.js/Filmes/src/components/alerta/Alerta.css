@@ -1,0 +1,35 @@
+/* .swal2-container {
+    background-color: rgba(80, 1, 1, 0.126) !important;
+} */
+
+.swal2-popup {
+   background-color: rgb(0, 0, 0) !important;
+   color: rgb(255, 255, 255) !important;
+}
+
+.swal2-confirm {
+    color: rgb(255, 255, 255) !important;
+    background-color: rgb(255, 0, 0);
+}
+
+.swal2-error {
+    color: rgb(230, 0, 0) !important;
+    border-color: rgb(255, 0, 0) !important;
+    
+}
+
+.swal2-x-mark-line-left, .swal2-x-mark-line-right {
+    background-color: rgb(255, 0, 0) !important;
+}
+
+
+.swal2-success .swal2-success-ring {
+    color: rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) !important;
+    border: 1px solid rgb(255, 255, 255) !important;
+}
+
+.swal2-success [class^="swal2-success-line"] {
+    background-color: rgb(255, 255, 255) !important;
+}
+
