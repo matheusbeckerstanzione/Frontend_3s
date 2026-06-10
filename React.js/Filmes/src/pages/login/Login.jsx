@@ -1,12 +1,10 @@
 import "./Login.css"
-
 import Botao from "../../components/botao/Botao";
-import Logo from "../../assets/img/logo.png";
+import Logo from "../../assets/img/logo.svg"
 
 const Login = () => {
     return (
-        <>
-       <main className= "main_login">
+      <main className= "main_login">
           <div className="banner"></div>
           <section className="section_login">
             <img src={Logo} alt="Logo do Filmoteca"/>
@@ -26,9 +24,7 @@ const Login = () => {
             </form>
           </section>
         </main>
-        </>
-       
     )
 }
 
-export default Login;
+export default Login
