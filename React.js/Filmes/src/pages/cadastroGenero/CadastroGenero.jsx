@@ -1,229 +1,246 @@
 import "./CadastroGenero.css"
 import Header from "../../components/header/Header"
-import Footer from "../../components/footer/Footer";
+import Footer from "../../components/footer/Footer"
 import Cadastro from "../../components/cadastro/Cadastro"
-import { useEffect, useState } from "react";
-import Lista from "../../components/lista/Lista";
-import api from "../../services/services";
-import Swal from "sweetalert2";
-import { Alerta } from "../../components/alerta/Alerta";
-
+import Lista from "../../components/lista/Lista"
+import { Alerta } from "../../components/alerta/Alerta"
+import { useEffect, useState } from "react"
+import api from "../../services/services"
+import { Await } from "react-router-dom"
+import Swal from 'sweetalert2'
 
 const CadastroGenero = () => {
-
     //variaveis e states
-    const [valor, setValor] = useState("");
-    const [listaGeneros, setListaGeneros] = useState([]);
-    const [editar, setEditar] = useState(false);
-    const [idGenero, setIdGenero] = useState(0)
 
-    //funcao de ciclo de vidGeneroa
+    const [valor, setValor] = useState("")
+    const [listaGeneros, setListaGeneros] = useState([])
+    const [editar, setEditar] = useState(false)
+    const [id, setId] = useState(0)
+    //funçoes e ciclo de vida
+    // function cadastrarGenero(e) {
+    //     e.preventDefault() // Evita que a página seja recarregada ao enviar o formulário
+    //     alert ("Função cadastrar genero em desenvolvimento")
+    // }
 
+
+
+    // ciclo de vida
     const getGeneros = async () => {
-        //chamar a api
         try {
-            const retorno = await api.get("/Genero");
-            const dados = retorno.data;
-            console.log(dados);
-
-            setListaGeneros(retorno.data);
+            const retornoAPI = await api.get("/Genero")
+            setListaGeneros(retornoAPI.data)
+        } catch (e) {
+            Alerta({
+                title: 'Erro ao carregar dados da api',
+                text: 'Erro ao carregar dados da api, tente novamente!',
+                icon: 'warning',
+                confirmButtonText: 'Continue'
+            })
         }
-        catch (error) {
-            alert("Erro ao buscar gêneros: ");
-            console.log(error);
-
-        }
-        //preencher o array listaGeneros
     }
 
+    //função ciclo de vida para carregar os generos assim que a pagina for carregada
     useEffect(() => {
-        getGeneros();
+        getGeneros()
     }, [])
 
-
+    //função de cadastro de genero 
     const cadastrarGenero = async (e) => {
-        e.preventDefault();
+        e.preventDefault() // Evita que a página seja recarregada ao enviar o formulário
 
+        //Validar o Formulario
         if (valor.trim().length == 0) {
-
-            Alerta({
-                title: 'Error!',
-                text: `${valor}O campo gênero é obrigatório.`,
-                icon: 'error',
-                confirmButtonText: 'Cool'
-            })
-            // Swal.fire({
-            //     title: 'Error!',
-            //     text: `${valor}O campo gênero é obrigatório.`,
-            //     icon: 'error',
-            //     confirmButtonText: 'Cool'
-            // });
-            return false;
+            Alerta(({
+                title: 'Informe o nome do gênero',
+                text: 'Por favor, informe o nome do gênero',
+                icon: 'warning',
+                confirmButtonText: 'Continue'
+            }))
+            // Alerta({
+            //     title: 'Informe o nome do gênero',
+            //     text: 'Por favor, informe o nome do gênero',
+            //     icon: 'warning',
+            //     confirmButtonText: 'Continue'
+            // })
+            return false
         }
-
         const objCadastro = {
-            idGenero: crypto.randomUUID(), // GUidGenero vazio, o banco gera o real
-            nome: valor,
-            filmes: []
+            idGenero: crypto.randomUUID(),
+            nome: valor
         }
 
         try {
-            const retornoApi = await api.post("/Genero", objCadastro);
-            getGeneros();
+            const retorno = await api.post("/Genero", objCadastro)
+            // alert("Gênero cadastrado com sucesso!")
             Alerta({
-                title: 'Cadastrado!',
-                text: `${objCadastro.nome} cadastrado com sucesso.`,
+                title: 'Gênero Cadastrado',
+                text: `${valor} - Gênero cadastrado com sucesso!`,
                 icon: 'success',
-                confirmButtonText: 'Cool'
-            });
-            setValor("");
-        } catch (error) {
-            alert("Erro ao cadastrar gênero: ");
-            console.log(error);
+                confirmButtonText: 'Continue'
+            })
+            getGeneros()
+
+            limparFormulario()
+        } catch (e) {
+            Alerta({
+                title: 'Erro ao cadastrar gênero',
+                text: 'Erro ao cadastrar gênero, tente novamente!',
+                icon: 'error',
+                confirmButtonText: 'Continue'
+            })
+            console.log(e)
         }
+    }//fim da função cadastrar Genero
 
-
-    }
-
-
+    //função para limpar o formulario e resetar os states relacionados a edição
     const limparFormulario = () => {
         setValor("")
         setEditar(false)
+        setId(0) //resetar o id
     }
 
+    //função para excluir um genero, recebe o item que o usuario quer excluir, chama a api para excluir e depois atualiza a lista
     const excluirGenero = async (item) => {
-        // if (!confirm(`Quer apagar o gênero ${item.nome}?`)) {
-        //     return false;
+        ///chamar a api.delete(???) e excluir o item da lista
+        console.log(item)
+        // if (!confirm(`Quer mesmo excluir ${item.nome}?`)) {
+        //     return false
         // }
 
-
         const result = await Alerta({
-            title: "Confirmar exclusão",
-            text: `tem certeza que deseja excluir o gênero ${item.nome}?`,
+            title: "Cadastro de genero",
+            text: `Quer mesmo excluir ${item.nome}?`,
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Sim, excluir!",
-            cancelButtonText: "Não, cancelar!",
+            confirmButtonText: "Deletar",
+            cancelButtonText: "Cancelar"
         })
-
         if (!result.isConfirmed) {
-            return false;
+            return false
         }
 
         try {
-            const retornoApi = await api.delete(`/Genero/${item.idGenero}`);
-            if (retornoApi.status == 200 || retornoApi.status == 204) {
+            const retornoAPI = await api.delete(`/Genero/${item.idGenero}`)
+            if (retornoAPI.status == 200 || retornoAPI.status == 204) {
                 Alerta({
-                    title: 'Excluído!',
-                    text: `${item.nome} excluído com sucesso.`,
+                    title: 'Gênero Excluído',
+                    text: `${item.nome} - Gênero excluído com sucesso!`,
                     icon: 'success',
-                    confirmButtonText: 'Cool'
-                });
-                getGeneros();
+                    confirmButtonText: 'Continue'
+                })
+                getGeneros()
+            } else {
+                Alerta({
+                    title: 'Erro ao excluir gênero',
+                    text: 'Erro ao excluir gênero!',
+                    icon: 'error',
+                    confirmButtonText: 'Continue'
+                })
             }
-
-
-            else {
-                alert("Erro ao excluir gênero: ");
-            }
-        } catch (error) {
-            alert("Erro ao excluir gênero: ");
-            console.log(error);
+        } catch (e) {
+            Alerta({
+                title: 'Erro ao excluir gênero',
+                text: 'Erro ao excluir gênero!',
+                icon: 'error',
+                confirmButtonText: 'Continue'
+            })
+            console.log(e)
         }
     }
 
-    // mostra os dados no formulario para o usuario editar
+    //mostra os dados do formulario para o usuario editar, e depois chama a função de editar
     const preEditar = (item) => {
-        setEditar(true)
         setValor(item.nome)
-        setIdGenero(item.idGenero)
+        setEditar(true)
+        setId(item.idGenero)
     }
 
+    //função para editar um genero, recebe o evento do formulario, valida os dados, chama a api para editar e depois atualiza a lista
     const editarGenero = async (e) => {
-        e.preventDefault()//para de atualizar o formulario
-        //validGeneroGeneroar o formulario
+        e.preventDefault()//ele para o postar do formulario ou seja o submit
+        //validar o formulario
         if (valor.trim().length == 0) {
             Alerta({
-                title: 'Error!',
-                text: `${item.nome}O campo gênero é obrigatório.`,
-                icon: 'error',
-                confirmButtonText: 'Cool'
-            });
-            return false;
+                title: 'Informe o nome do gênero',
+                text: 'Por favor, informe o nome do gênero',
+                icon: 'warning',
+                confirmButtonText: 'Continue'
+            })
+            return false
         }
+
+        // atualiza o objeto pra API
         const objEditar = {
-            idGenero: crypto.randomUUID(), // GUidGenero vazio, o banco gera o real
+            idGenero: id,
             nome: valor,
-            filmes: []
         }
-        //cadastrar na api com o put
+
         try {
-            const retornoApi = await api.put(`/Genero/${idGenero}`, objEditar);
-            limparFormulario()
-            getGeneros();
-            Swal.fire({
-                title: 'Atualizado!',
-                text: `${objEditar.nome} atualizado com sucesso.`,
+            // editar na api
+            const retornoAPI = await api.put(`/Genero/${id}`, objEditar)
+            // atualizar lista
+            getGeneros()
+            //alerta de sucesso
+            Alerta({
+                title: 'Edição de Gênero',
+                text: `${valor} - Gênero editado com sucesso!`,
                 icon: 'success',
-                confirmButtonText: 'Cool'
-            });
-        } catch (error) {
-            alert("Erro ao atualizar dados na API");
-            console.log(error);
+                confirmButtonText: 'Continue'
+            })
+            // limpar formulario
+            limparFormulario()
+
+        } catch (e) {
+            Alerta({
+                title: 'Erro ao editar gênero',
+                text: 'Erro ao editar gênero!',
+                icon: 'error',
+                confirmButtonText: 'Continue'
+            })
+            console.log(e)
         }
-        //listar os dados novamnete com getGeneros
-
-
-
-        alert("funcao editar genero em desenvolvimento ");
     }
-    //o JSX em si (XML E HTML)
 
+
+    // O jsx em si (XHML HTML)
     return (
         <>
             <Header />
             <main>
                 <Cadastro
-                    //Define o título que será exibidGeneroo no formulário
                     tituloCadastro="Cadastro de Gênero"
-                    // esconde o select de genero
-                    visibilidade="none"
-                    // Define o texto que aparece dentro do campo de input
                     placeholder="gênero"
-                    // ----------------------------------------------------
-                    // Propriedades voltada ao cadastro:
 
-                    //Função que será chamada ao enviar o formulário (onSubmit)
-                    funcCadastro={editar ? editarGenero : cadastrarGenero}
-                    //Valor atual do campo de texto
+                    visibilidade="none"
+                    visibilidadeImagem="none"
+
+                    funcCadastro={
+                        editar
+                            ? editarGenero
+                            : cadastrarGenero
+                    }
+
                     valor={valor}
-                    //Função que atualiza o estado do valor no componente pai sempre que o usuário digita no campo
                     setValor={setValor}
+
                     btnEditar={editar}
+
                     cancelarEdicao={limparFormulario}
-
-
                 />
                 <Lista
                     tituloLista="Lista de Gêneros"
-                    visibilidGeneroade="none"
-
-                    //Chama o método para validGeneroar:
                     lista={listaGeneros}
-                    //idGeneroentifica o tipo de lista:
                     tipoLista="genero"
-
-
+                    visibilidade="none"
+                    visibilidadeImagem="none"
                     funcExcluir={excluirGenero}
                     funcEditar={preEditar}
                 />
             </main>
             <Footer />
         </>
-
     )
 }
-
-export default CadastroGenero;
+export default CadastroGenero
